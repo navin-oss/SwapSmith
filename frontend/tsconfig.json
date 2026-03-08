@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+<<<<<<< HEAD
+    "target": "ES2020",
+=======
+    "target": "ES2017",
+>>>>>>> 941ae72
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+<<<<<<< HEAD
+      "shared/*": ["../shared/*"],
+      "dotenv": ["./node_modules/dotenv"],
+      "drizzle-kit": ["./node_modules/drizzle-kit"],
+      "drizzle-orm": ["./node_modules/drizzle-orm"],
+      "drizzle-orm/*": ["./node_modules/drizzle-orm/*"],
+      "winston": ["./node_modules/winston"],
+      "axios": ["./node_modules/axios"],
+      "@neondatabase/serverless": ["./node_modules/@neondatabase/serverless"],
+    },
+    "types": ["vitest"]
+=======
+      "dotenv": ["./node_modules/dotenv"],
+      "drizzle-kit": ["./node_modules/drizzle-kit"],
+      "drizzle-orm": ["./node_modules/drizzle-orm"],
+      "drizzle-orm/*": ["./node_modules/drizzle-orm/*"]
+    },
+    "types": ["jest"]
+>>>>>>> 941ae72
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts",
+    "../shared/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 941ae72

@@ -1,0 +1,147 @@
+'use client'
+import React from "react";
+import { ChevronDown } from "lucide-react";
+
+const faqs = [
+  {
+    question: "What is SwapSmith?",
+    answer:
+      "SwapSmith is a platform that allows users to swap cryptocurrencies easily, securely, and instantly with industry-grade security."
+  },
+  {
+    question: "How do I create an account?",
+    answer:
+      "Click on the Register button at the top right and fill in your details. Account creation takes less than a minute."
+  },
+  {
+    question: "Is My data secure?",
+    answer:
+      "Yes. We use advanced encryption, secure authentication, and best industry practices to protect your data and transactions."
+  },
+  {
+    question: "Which cryptocurrencies are supported?",
+    answer:
+      "We support a wide range of popular cryptocurrencies including BTC, ETH, USDT, and many more."
+  },
+  {
+    question: "How can I contact support?",
+    answer:
+      "You can contact our support team through the Contact page or via live chat for instant assistance."
+  }
+];
+
+const FAQSection: React.FC = () => {
+  return (
+<<<<<<< HEAD
+    <section className="relative py-28 px-6 bg-gray-50 dark:bg-[#070d1a] text-gray-900 dark:text-white overflow-hidden transition-colors duration-300">
+
+      {/* ===== Floating Glow Background Effects ===== */}
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-indigo-600/10 dark:bg-indigo-600/20 rounded-full blur-[160px] animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/10 dark:bg-cyan-500/20 rounded-full blur-[160px] animate-pulse"></div>
+=======
+    <section className="relative py-28 px-6 bg-[#070d1a] text-white overflow-hidden">
+
+      {/* ===== Floating Glow Background Effects ===== */}
+      <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[160px] animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 rounded-full blur-[160px] animate-pulse"></div>
+>>>>>>> 941ae72
+
+      <div className="relative max-w-4xl mx-auto">
+
+        {/* ===== Heading ===== */}
+        <div className="text-center mb-20">
+<<<<<<< HEAD
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 dark:from-indigo-400 dark:via-cyan-400 dark:to-violet-400 bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 mt-6 text-lg">
+=======
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 via-cyan-400 to-violet-400 bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-gray-400 mt-6 text-lg">
+>>>>>>> 941ae72
+            Everything you need to know about SwapSmith
+          </p>
+        </div>
+
+        {/* ===== FAQ Cards ===== */}
+        <div className="space-y-8">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+<<<<<<< HEAD
+              className="group relative rounded-3xl p-[1px]
+                         bg-gradient-to-r from-indigo-500/30 via-cyan-500/30 to-violet-500/30
+                         dark:from-indigo-500/40 dark:via-cyan-500/40 dark:to-violet-500/40
+=======
+              className="group relative rounded-3xl p-[1px] 
+                         bg-gradient-to-r from-indigo-500/40 via-cyan-500/40 to-violet-500/40
+>>>>>>> 941ae72
+                         hover:from-indigo-500 hover:via-cyan-500 hover:to-violet-500
+                         transition-all duration-500"
+            >
+              <div
+<<<<<<< HEAD
+                className="backdrop-blur-2xl bg-white/80 dark:bg-white/5 border border-gray-200 dark:border-white/10
+                           rounded-3xl p-8 transition-all duration-500
+                           hover:bg-white dark:hover:bg-white/10 hover:shadow-xl dark:hover:shadow-2xl hover:shadow-indigo-500/20 dark:hover:shadow-indigo-500/30"
+=======
+                className="backdrop-blur-2xl bg-white/5 border border-white/10 
+                           rounded-3xl p-8 transition-all duration-500
+                           hover:bg-white/10 hover:shadow-2xl hover:shadow-indigo-500/30"
+>>>>>>> 941ae72
+              >
+
+                {/* Question Row */}
+                <div className="flex justify-between items-center">
+<<<<<<< HEAD
+                  <h3 className="text-xl md:text-2xl font-semibold tracking-wide text-gray-800
+                                 dark:group-hover:text-cyan-400 dark:text-white
+                                 group-hover:text-indigo-600 transition duration-300">
+                    {faq.question}
+                  </h3>
+
+                  <ChevronDown className="w-6 h-6 text-gray-500 dark:text-gray-400
+                                            group-hover:text-indigo-600 dark:group-hover:text-cyan-400
+                                            group-hover:rotate-180
+                                            transition-all duration-500" />
+=======
+                  <h3 className="text-xl md:text-2xl font-semibold tracking-wide 
+                                 group-hover:text-cyan-400 transition duration-300">
+                    {faq.question}
+                  </h3>
+
+                  <ChevronDown className="w-6 h-6 text-gray-400 
+                                           group-hover:text-cyan-400 
+                                           group-hover:rotate-180 
+                                           transition-all duration-500" />
+>>>>>>> 941ae72
+                </div>
+
+                {/* Answer */}
+                <div
+                  className="overflow-hidden max-h-0 opacity-0
+                             group-hover:max-h-96 group-hover:opacity-100
+                             transition-all duration-500 ease-in-out"
+                >
+<<<<<<< HEAD
+                  <p className="mt-6 text-lg md:text-xl text-gray-700 dark:text-gray-100 leading-relaxed font-medium">
+=======
+                  <p className="mt-6 text-lg md:text-xl text-gray-100 leading-relaxed font-medium">
+>>>>>>> 941ae72
+                    {faq.answer}
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default FAQSection;
